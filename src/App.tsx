@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import Header from './components/Header';
 import Homepage from './pages/Homepage';
 import AboutUs from './pages/AboutUs';
@@ -10,7 +10,7 @@ function App() {
   const [current, setCurrent] = useState('/');
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header current={current} setCurrent={setCurrent} />
       <div className="mt-16">
         <Routes>
@@ -20,7 +20,7 @@ function App() {
           <Route path="/work-with-us" element={<WorkWithUs />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

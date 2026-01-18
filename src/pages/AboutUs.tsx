@@ -17,14 +17,14 @@ export default function AboutUs() {
           we love.
         </p>
         <div className="flex flex-col md:flex-row gap-4 md:gap-8 justify-between px-4 md:px-8">
-          <AboutCard imgSrc={'./brankam.jpg'} name={'untitleddocument'}>
+          <AboutCard imgSrc={'/brankam.jpg'} name={'untitleddocument'}>
             <p>
               untitleddocument is a producer and audio engineer from North
               Carolina. He is an avid gearhead, and handles the hardware side of
               event planning.
             </p>
           </AboutCard>
-          <AboutCard imgSrc={'./brankam.jpg'} name={'brankam'}>
+          <AboutCard imgSrc={'/brankam.jpg'} name={'brankam'}>
             <p>
               brankam is a singer, producer, rapper, and more from North
               Carolina.
@@ -54,7 +54,7 @@ export default function AboutUs() {
               to learn more!
             </p>
           </AboutCard>
-          <AboutCard imgSrc={'./brankam.jpg'} name={'Franco'}>
+          <AboutCard imgSrc={'/brankam.jpg'} name={'Franco'}>
             Franco is our event manager. He knows all of the ins and outs of the
             industry, helping International Groove find awesome venues to play
             in.
