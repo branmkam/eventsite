@@ -17,25 +17,11 @@ export default function AboutUs() {
           we love.
         </p>
         <div className="flex flex-col md:flex-row gap-4 md:gap-8 justify-between px-4 md:px-8">
-          <AboutCard imgSrc={'./brankam.jpg'} name={'brankam'}>
+          <AboutCard imgSrc={'./brankam.jpg'} name={'untitleddocument'}>
             <p>
-              brankam is a singer, producer, rapper, and more from North
-              Carolina.
-            </p>
-            <p>
-              He produces groovy electronic music inspired by the likes of
-              Kaytranada, Disclosure, Sammy Virji, Daft Punk, Chromeo, and many
-              other acts in the genres of nu-funk, house, and UK garage.
-            </p>
-            <p>
-              He speaks three languages, and hopes that International Groove
-              will be a place for him to share the intersection of his two
-              passions.
-            </p>
-            <p>
-              He is a software developer by day, and built this website. Check
-              out his
-              <a href="https://brankam.com"> personal website</a> to learn more!
+              untitleddocument is a producer and audio engineer from North
+              Carolina. He is an avid gearhead, and handles the hardware side of
+              event planning.
             </p>
           </AboutCard>
           <AboutCard imgSrc={'./brankam.jpg'} name={'brankam'}>
@@ -56,29 +42,22 @@ export default function AboutUs() {
             <p>
               He is a software developer by day, and built this website. Check
               out his
-              <a href="https://brankam.com"> personal website</a> to learn more!
+              <a
+                className="underline hover:text-white hover:cursor-pointer"
+                href="https://brankam.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {' '}
+                personal website
+              </a>{' '}
+              to learn more!
             </p>
           </AboutCard>
-          <AboutCard imgSrc={'./brankam.jpg'} name={'brankam'}>
-            <p>
-              brankam is a singer, producer, rapper, and more from North
-              Carolina.
-            </p>
-            <p>
-              He produces groovy electronic music inspired by the likes of
-              Kaytranada, Disclosure, Sammy Virji, Daft Punk, Chromeo, and many
-              other acts in the genres of nu-funk, house, and UK garage.
-            </p>
-            <p>
-              He speaks three languages, and hopes that International Groove
-              will be a place for him to share the intersection of his two
-              passions.
-            </p>
-            <p>
-              He is a software developer by day, and built this website. Check
-              out his
-              <a href="https://brankam.com"> personal website</a> to learn more!
-            </p>
+          <AboutCard imgSrc={'./brankam.jpg'} name={'Franco'}>
+            Franco is our event manager. He knows all of the ins and outs of the
+            industry, helping International Groove find awesome venues to play
+            in.
           </AboutCard>
         </div>
       </div>
