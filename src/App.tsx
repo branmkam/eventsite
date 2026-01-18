@@ -5,6 +5,7 @@ import AboutUs from './pages/AboutUs';
 import Events from './pages/Events';
 import WorkWithUs from './pages/WorkWithUs';
 import { useState } from 'react';
+import Footer from './components/Footer';
 
 function App() {
   const [current, setCurrent] = useState('/');
@@ -12,7 +13,7 @@ function App() {
   return (
     <HashRouter>
       <Header current={current} setCurrent={setCurrent} />
-      <div className="mt-16">
+      <div className="mt-16 mb-8">
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/about-us" element={<AboutUs />} />
@@ -20,6 +21,7 @@ function App() {
           <Route path="/work-with-us" element={<WorkWithUs />} />
         </Routes>
       </div>
+      <Footer />
     </HashRouter>
   );
 }

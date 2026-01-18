@@ -3,7 +3,7 @@ import AboutCard from '../components/AboutCard';
 export default function AboutUs() {
   return (
     <div
-      className="relative w-full min-h-[calc(100vh-64px)] bg-cover bg-center bg-fixed font-homenaje text-brankamyellow"
+      className="relative w-full min-h-[calc(100vh-96px)] bg-cover bg-center bg-fixed font-homenaje text-brankamyellow"
       style={{ backgroundImage: 'url(/djbg.jpg)' }}
     >
       <div className="absolute inset-0 bg-black/50" />
