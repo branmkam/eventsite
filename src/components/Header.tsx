@@ -8,7 +8,7 @@ export default function Header({
   setCurrent?: (path: string) => void;
 }) {
   return (
-    <div className="fixed top-0 left-0 w-full p-4 bg-black text-cerulean font-homenaje w-full h-16 flex justify-between items-center">
+    <div className="z-50 fixed top-0 left-0 w-full p-4 bg-black text-cerulean font-homenaje w-full h-16 flex justify-between items-center">
       <Link to="/" onClick={() => setCurrent && setCurrent('/')}>
         <img src="/brankam.png" alt="logo" className="h-12 m-0" />
       </Link>

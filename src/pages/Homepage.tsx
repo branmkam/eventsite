@@ -9,8 +9,8 @@ export default function Homepage() {
         <h1 className="text-2xl md:text-5xl lg:text-6xl text-center font-averia text-cerulean px-1/8">
           INTERNATIONAL GROOVE
         </h1>
-        <div className="flex flex-col sm:flex-row justify-between gap-12 md:text-3xl lg:text-5xl text-xl px-1/8 text-brankamyellow z-20 text-2xl items-center">
-          <h1 className="w-">
+        <div className="flex flex-col sm:flex-row justify-between gap-6 md:gap-12 md:text-3xl lg:text-5xl text-xl px-1/8 text-brankamyellow z-20 text-2xl items-center">
+          <h1>
             Bringing a passion for international electronic music to
             Raleigh-Durham.
           </h1>
