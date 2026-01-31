@@ -12,7 +12,7 @@ export default function Homepage() {
 				<h1 className="text-2xl md:text-5xl lg:text-6xl text-center  font-averia text-cerulean px-1/8">
 					INTERNATIONAL GROOVE
 				</h1>
-				<div className="flex flex-col sm:flex-row justify-between gap-6 md:gap-12 md:text-3xl lg:text-5xl text-xl px-1/8 text-brankamyellow z-20 text-2xl items-center">
+				<div className="flex flex-col sm:flex-row justify-between gap-6 text-center sm:text-left md:gap-12 md:text-3xl lg:text-5xl text-xl px-1/8 text-brankamyellow z-20 text-2xl items-center">
 					<h1>
 						Bringing a passion for international electronic music to
 						Raleigh-Durham.
@@ -28,7 +28,7 @@ export default function Homepage() {
 						Your browser doesn't support HTML5 video
 					</video>
 				</div>
-				<div className="flex gap-12">
+				<div className="flex flex-col sm:flex-row gap-4 sm:gap-12">
 				<CrispButton className="w-[300px] hover:cursor-pointer">
 					<Link
 						to="/about-us"
