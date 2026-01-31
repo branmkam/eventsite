@@ -38,7 +38,7 @@ export default function Homepage() {
 				</CrispButton>
 				<CrispButton className="w-[300px] hover:cursor-pointer">
 					<Link
-						to="/about-us"
+						to="/events"
 					>
 						See Our Upcoming Events
 					</Link>
