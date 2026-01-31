@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTicket, faEye } from "@fortawesome/free-solid-svg-icons";
 import type { ShowProps } from "../../data/allshows.js";
 import ParseISO from "../../data/ParseISO";
 
@@ -10,8 +8,6 @@ interface ShowCardProps {
 const lang = "en";
 
 export default function ShowCard({ show: s }: ShowCardProps) {
-	const isUpcoming = ParseISO(s.date) > new Date();
-	const icon = isUpcoming ? faTicket : faEye;
 	return (
 		<div
 			className="flex flex-col gap-4 items-stretch justify-between text-left p-4 rounded-lg transition duration-100 ease-in-out bg-opacity-50 hover:bg-opacity-50 bg-slate-900 hover:bg-slate-800"
@@ -54,7 +50,7 @@ export default function ShowCard({ show: s }: ShowCardProps) {
 					</span>
 					{/* short date when screen >= md */}
 					<span className="text-lg md:text-2xl text-yellow-400 whitespace-nowrap hidden md:block">
-						{ParseISO(s.date).toLocaleDateString([lang, "en-US"], { dateStyle: "short" })}
+						{ParseISO(s.date).toLocaleDateString([lang, "en-US"], { month: "short", day: "numeric", year: "numeric"})}
 					</span>
 					<span className="text-lg md:text-2xl text-yellow-400 whitespace-nowrap">
 						{ParseISO(s.date).toLocaleTimeString([lang, "en-US"], {
