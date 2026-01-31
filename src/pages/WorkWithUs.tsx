@@ -10,11 +10,6 @@ export default function WorkWithUs() {
 		>
 			<div className="absolute inset-0 bg-black/50" />
 			<div className="relative z-10 flex flex-col gap-8 w-full items-center text-center p-4">
-				<img
-					src="/brankam.png"
-					alt="Brankam"
-					className="w-[25vw] object-contain"
-				/>
 				<div className="flex flex-col gap-4 md:gap-8 justify-center px-4 md:px-8">
 					{/* work with us video */}
 					<div className="relative">

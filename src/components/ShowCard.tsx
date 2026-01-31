@@ -20,7 +20,7 @@ export default function ShowCard({ show: s }: ShowCardProps) {
 				/></a>
 			)}
 			<div className="flex flex-row items-center justify-between gap-2">
-				<span className="min-w-0 flex-1 px-2 text-base md:text-lg">
+				<span className="min-w-0 flex-1 px-2 text-base sm:text-xl">
 					<a title={'See the venue on Google Maps'}
 						className="text-slate-200 hover:text-red-400"
 						rel="noreferrer"
@@ -32,7 +32,7 @@ export default function ShowCard({ show: s }: ShowCardProps) {
 							s.city
 						}
 					>
-						<span className="text-lg sm:text-xl md:text-2xl">{s.venue}</span>
+						<span className="text-xl md:text-2xl">{s.venue}</span>
 						<br />
 						{s.city}
 					</a>{" "}
@@ -41,7 +41,7 @@ export default function ShowCard({ show: s }: ShowCardProps) {
 				</span>
 				<span className="shrink-0 px-2 flex flex-col items-end text-right">
 					{/* MM/DD/YY when screen < md */}
-					<span className="text-lg md:text-2xl text-yellow-400 whitespace-nowrap block md:hidden">
+					<span className="text-lg sm:text-xl md:text-2xl text-yellow-400 whitespace-nowrap block md:hidden">
 						{ParseISO(s.date).toLocaleDateString([lang, "en-US"], {
 							month: "2-digit",
 							day: "2-digit",

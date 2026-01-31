@@ -22,7 +22,7 @@ export default function Events() {
 				</h1>
 
 
-				<div className="grid max-w-[1500px]  justify-between grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
+				<div className="grid max-w-[1400px] justify-between grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
 					{shows.length > 0 ? (
 						shows.map((s: ShowProps, i: number) => (
 							<ShowCard key={"show" + i} show={s} />
@@ -34,7 +34,7 @@ export default function Events() {
 				<h1 className="my-2 text-2xl md:text-5xl font-bold text-cerulean">
 					Past Events
 				</h1>
-				<div className="grid max-w-[1500px]  justify-between grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
+				<div className="grid max-w-[1400px]  justify-between grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
 					{pastshows.length > 0 ? (
 						pastshows.map((s: ShowProps, i: number) => (
 							<ShowCard key={"pastshow" + i} show={s} />

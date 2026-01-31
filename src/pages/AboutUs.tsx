@@ -7,7 +7,7 @@ export default function AboutUs() {
 			style={{ backgroundImage: 'url(/djbg.jpg)' }}
 		>
 			<div className="absolute inset-0 bg-black/50" />
-			<div className="relative z-10 flex flex-col gap-4 md:gap-8 p-4">
+			<div className="relative z-10 flex flex-col gap-4 items-center md:gap-8 p-4">
 				<h1 className="text-2xl md:text-5xl lg:text-6xl text-center font-averia text-cerulean px-1/8">
 					ABOUT US
 				</h1>
@@ -16,7 +16,7 @@ export default function AboutUs() {
 					from all over the earth, we wanted to bring a slice of what
 					we love to a place we love.
 				</p>
-				<div className="flex flex-col md:flex-row gap-4 md:gap-8 justify-between px-4 md:px-8">
+				<div className="justify-center flex flex-col gap-4 md:gap-8 justify-between">
 					<AboutCard
 						imgSrc={'/brankam.jpg'}
 						name={'untitleddocument'}
