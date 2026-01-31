@@ -8,7 +8,7 @@ export default function Homepage() {
 			style={{ backgroundImage: 'url(/djbg.jpg)' }}
 		>
 			<div className="absolute inset-0 bg-black/50" />
-			<div className="relative z-10 flex flex-col gap-8 p-4 items-center justify-center">
+			<div className="relative z-10 flex flex-col gap-16 p-4 items-center justify-center">
 				<h1 className="text-2xl md:text-5xl lg:text-6xl text-center  font-averia text-cerulean px-1/8">
 					INTERNATIONAL GROOVE
 				</h1>
@@ -28,6 +28,7 @@ export default function Homepage() {
 						Your browser doesn't support HTML5 video
 					</video>
 				</div>
+				<div className="flex gap-12">
 				<CrispButton className="w-[300px] hover:cursor-pointer">
 					<Link
 						to="/about-us"
@@ -35,6 +36,14 @@ export default function Homepage() {
 						Learn More About Us
 					</Link>
 				</CrispButton>
+				<CrispButton className="w-[300px] hover:cursor-pointer">
+					<Link
+						to="/about-us"
+					>
+						See Our Upcoming Events
+					</Link>
+				</CrispButton>
+				</div>
 			</div>
 		</div>
 	);
