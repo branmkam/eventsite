@@ -17,15 +17,15 @@ export default function ShowCard({ show: s }: ShowCardProps) {
 			className="flex flex-col gap-4 items-stretch justify-between text-left p-4 rounded-lg transition duration-100 ease-in-out bg-opacity-50 hover:bg-opacity-50 bg-slate-900 hover:bg-slate-800"
 		>
 			{s.image && (
-				<img
+				<a title='More information about this show' href={s.link} target="_blank" rel="noreferrer"><img
 					src={s.image}
 					alt=""
 					className="w-full self-center object-cover rounded-t-md"
-				/>
+				/></a>
 			)}
-			<div className="flex flex-row items-center justify-between">
-				<span className="px-2 text-base md:text-lg">
-					<a
+			<div className="flex flex-row items-center justify-between gap-2">
+				<span className="min-w-0 flex-1 px-2 text-base md:text-lg">
+					<a title={'See the venue on Google Maps'}
 						className="text-slate-200 hover:text-red-400"
 						rel="noreferrer"
 						target="_blank"
@@ -41,26 +41,27 @@ export default function ShowCard({ show: s }: ShowCardProps) {
 						{s.city}
 					</a>{" "}
 					<br />
-					<span className="text-lg md:text-2xl text-yellow-400">
+					
+				</span>
+				<span className="shrink-0 px-2 flex flex-col items-end text-right">
+					{/* MM/DD/YY when screen < md */}
+					<span className="text-lg md:text-2xl text-yellow-400 whitespace-nowrap block md:hidden">
 						{ParseISO(s.date).toLocaleDateString([lang, "en-US"], {
-							month: "short",
+							month: "2-digit",
 							day: "2-digit",
-							year: "numeric",
-						})}{" "}
-						|{" "}
+							year: "2-digit",
+						})}
+					</span>
+					{/* short date when screen >= md */}
+					<span className="text-lg md:text-2xl text-yellow-400 whitespace-nowrap hidden md:block">
+						{ParseISO(s.date).toLocaleDateString([lang, "en-US"], { dateStyle: "short" })}
+					</span>
+					<span className="text-lg md:text-2xl text-yellow-400 whitespace-nowrap">
 						{ParseISO(s.date).toLocaleTimeString([lang, "en-US"], {
-							hour: "2-digit",
+							hour: "numeric",
 							minute: "2-digit",
 						})}
 					</span>
-				</span>
-				<span className="px-2">
-					<a href={s.link} target="_blank" rel="noreferrer">
-						<FontAwesomeIcon
-							icon={icon}
-							className="text-white hover:text-yellow-500 size-7"
-						/>
-					</a>
 				</span>
 			</div>
 		</div>

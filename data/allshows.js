@@ -47,6 +47,13 @@ const allshows = [
     link: "https://highgardenraleigh.com/",
     date: "2025-11-06T21:00:00",
     image: "../../public/ggtest.png",
+  },
+  {
+    venue: "Highgarden",
+    city: "Raleigh, NC, USA",
+    link: "https://highgardenraleigh.com/",
+    date: "2026-03-05T21:00:00",
+    image: "../../public/ggtest.png",
   }
 ];
 
