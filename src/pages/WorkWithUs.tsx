@@ -10,6 +10,11 @@ export default function WorkWithUs() {
 		>
 			<div className="absolute inset-0 bg-black/50" />
 			<div className="relative z-10 flex flex-col gap-8 w-full items-center text-center p-4">
+				<img
+					src="/brankam.png"
+					alt="Brankam"
+					className="w-[25vw] object-contain"
+				/>
 				<div className="flex flex-col gap-4 md:gap-8 justify-center px-4 md:px-8">
 					{/* work with us video */}
 					<div className="relative">
@@ -22,7 +27,7 @@ export default function WorkWithUs() {
 							autoPlay
 							loop
 							muted
-							className="z-30 absolute w-[295px] top-[180px] left-[133px] "
+							className="z-30 absolute w-[300px] top-[180px] left-[128px] rounded-md"
 						>
 							<source src="contactus.mp4" type="video/mp4" />
 							Your browser does not support the video tag.
