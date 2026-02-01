@@ -29,8 +29,8 @@ export default function AboutUs() {
 					</AboutCard>
 					<AboutCard imgSrc={'/brankam.jpg'} name={'brankam'}>
 						<p>
-							brankam is a singer, producer, rapper, and more from
-							North Carolina.
+							brankam is a  producer, singer, pianist, and rapper of Mediterranean heritage from
+							North Carolina. 
 						</p>
 						<p>
 							He produces groovy electronic music inspired by the
@@ -47,13 +47,13 @@ export default function AboutUs() {
 							He is a software developer by day, and built this
 							website. Check out his
 							<a
-								className="underline hover:text-white hover:cursor-pointer"
+								className="underline hover:text-cherryred text-white hover:cursor-pointer"
 								href="https://brankam.com"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
 								{' '}
-								personal website
+								website
 							</a>{' '}
 							to learn more!
 						</p>
