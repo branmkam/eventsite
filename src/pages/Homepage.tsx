@@ -1,7 +1,15 @@
 import CrispButton from '../components/CrispButton';
 import { Link } from 'react-router-dom';
+import { useEffect, useRef } from 'react';
 
 export default function Homepage() {
+	const videoRef = useRef<HTMLVideoElement>(null);
+	useEffect(() => {
+		const video = videoRef.current;
+		if (!video) return;
+		video.muted = true;
+		video.play().catch(() => {});
+	}, []);
 	return (
 		<div
 			className="relative w-full min-h-[calc(100vh-96px)] bg-cover bg-center bg-fixed font-homenaje"
@@ -18,9 +26,11 @@ export default function Homepage() {
 						Raleigh-Durham.
 					</h1>
 					<video
+						ref={videoRef}
 						autoPlay
 						loop
 						muted
+						playsInline
 						className="w-full sm:w-1/2 object-cover rounded bg-black"
 						style={{ display: 'block' }}
 					>

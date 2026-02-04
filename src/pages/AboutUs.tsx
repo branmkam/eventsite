@@ -45,14 +45,13 @@ export default function AboutUs() {
 						</p>
 						<p>
 							He is a software developer by day, and built this
-							website. Check out his
+							website. Check out his{' '}
 							<a
 								className="underline hover:text-cherryred text-white hover:cursor-pointer"
 								href="https://brankam.com"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								{' '}
 								website
 							</a>{' '}
 							to learn more!

@@ -9,12 +9,12 @@ export default function Header({
 }) {
 	return (
 		<div className="z-50 fixed top-0 left-0 w-full px-4 bg-black text-cerulean font-homenaje w-full h-16 flex justify-between items-center">
-			<Link to="/" onClick={() => setCurrent && setCurrent('/')} className="shrink-0">
-				<h1 className="text-lg md:text-2xl font-averia text-cerulean hover:brightness-125 transition-ease-in-out duration-300 text-left">
+			<Link to="/" onClick={() => setCurrent && setCurrent('/')}>
+				<h1 className="sm:text-xl text-left font-averia text-cerulean">
 					ACROSS THE POND
 				</h1>
 			</Link>
-			<p className="flex gap-4 text-sm text-white">
+			<p className="flex gap-4 text-white">
 				<Link
 					to="/about-us"
 					onClick={() => setCurrent && setCurrent('/about-us')}
