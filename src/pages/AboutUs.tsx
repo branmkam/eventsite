@@ -13,7 +13,7 @@ export default function AboutUs() {
 				</h1>
 				<p className="md:text-2xl lg:text-4xl text-lg px-1/8 text-center">
 					As a trio of internationally minded people who enjoy music
-					from all over the earth, we wanted to bring a slice of what
+					from all over the earth, across every pond, we wanted to bring a slice of what
 					we love to a place we love.
 				</p>
 				<div className="justify-center flex flex-col gap-4 md:gap-8 justify-between">
