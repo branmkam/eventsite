@@ -1,8 +1,16 @@
 import { faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faMailBulk } from '@fortawesome/free-solid-svg-icons/faMailBulk';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useEffect, useRef } from 'react';
 
 export default function WorkWithUs() {
+	const videoRef = useRef<HTMLVideoElement>(null);
+	useEffect(() => {
+		const video = videoRef.current;
+		if (!video) return;
+		video.muted = true;
+		video.play().catch(() => {});
+	}, []);
 	return (
 		<div
 			className="relative w-full min-h-[calc(100vh-96px)] bg-cover bg-center bg-fixed font-homenaje"
@@ -19,9 +27,11 @@ export default function WorkWithUs() {
 							className="relative z-0 w-full h-auto max-h-[600px] object-contain shrink-0"
 						/>
 						<video
+							ref={videoRef}
 							autoPlay
 							loop
 							muted
+							playsInline
 							className="absolute z-10 top-[30%] left-[25%] w-[57%] rounded-md object-cover"
 						>
 							<source src="/contactus.mp4" type="video/mp4" />
