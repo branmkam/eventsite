@@ -23,7 +23,7 @@ export default function AboutCard({
 				<img
 					src={imgSrc}
 					alt=""
-					className="w-full md:w-auto md:h-96 md:shrink-0 object-cover rounded-lg order-2 md:order-1"
+					className="w-full md:w-96 md:h-96 md:shrink-0 object-cover object-top rounded-lg order-2 md:order-1"
 				/>
 			)}
 		</div>

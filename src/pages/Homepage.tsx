@@ -23,7 +23,7 @@ export default function Homepage() {
 				<div className="flex flex-col sm:flex-row justify-between gap-6 text-center sm:text-left md:gap-12 md:text-3xl lg:text-5xl text-xl px-1/8 text-brankamyellow z-20 text-2xl items-center">
 					<h1>
 						Bringing a passion for international electronic music to
-						Raleigh-Durham.
+						the Triangle.
 					</h1>
 					<video
 						ref={videoRef}

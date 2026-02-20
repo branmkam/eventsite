@@ -18,7 +18,7 @@ export default function AboutUs() {
 				</p>
 				<div className="justify-center flex flex-col gap-4 md:gap-8 justify-between">
 					<AboutCard
-						imgSrc={'/brankam.jpg'}
+						imgSrc={'/untitled.jpg'}
 						name={'untitleddocument'}
 					>
 						<p>
@@ -57,8 +57,8 @@ export default function AboutUs() {
 							to learn more!
 						</p>
 					</AboutCard>
-					<AboutCard imgSrc={'/brankam.jpg'} name={'Franco'}>
-						Franco is our event manager. He knows all of the ins and
+					<AboutCard imgSrc={'/captainfrank.jpg'} name={'Captain Frank'}>
+						Captain Frank (Franco) is our event manager. He knows all of the ins and
 						outs of the industry, helping International Groove find
 						awesome venues to play in.
 					</AboutCard>
