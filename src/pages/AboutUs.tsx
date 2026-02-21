@@ -11,7 +11,7 @@ export default function AboutUs() {
 				<h1 className="text-2xl md:text-5xl lg:text-6xl text-center font-averia text-cerulean px-1/8">
 					ABOUT US
 				</h1>
-				<p className="md:text-2xl lg:text-4xl text-lg px-1/8 text-center">
+				<p className="md:text-2xl lg:text-4xl text-lg px-18 md:px-36 text-center  max-w-[1500px]">
 					As a trio of internationally minded people who enjoy music
 					from all over the earth, across every pond, we wanted to bring a slice of what
 					we love to a place we love.
@@ -22,25 +22,21 @@ export default function AboutUs() {
 						name={'untitleddocument'}
 					>
 						<p>
-							untitleddocument is a producer and audio engineer
-							from North Carolina. He is an avid gearhead, and
-							handles the hardware side of event planning.
+						untitleddocument is an engineer/producer/DJ who grew up in South Africa, pioneering a dark sound inspired by its lush ambient soundscape and rich rhythms. 
+						</p>
+						<p>
+						He makes alternative RnB and Deep House, often pulling influence from both genres. Whether he DJs or performs, he champions bringing an ethereal and relaxing atmosphere to every club and event venue.
 						</p>
 					</AboutCard>
+
 					<AboutCard imgSrc={'/brankam.jpg'} name={'brankam'}>
 						<p>
-							brankam is a  producer, singer, pianist, and rapper of Mediterranean heritage from
-							North Carolina. 
-						</p>
-						<p>
-							He produces groovy electronic music inspired by the
-							likes of Kaytranada, Disclosure, Sammy Virji, Daft
-							Punk, Chromeo, and many other acts in the genres of
-							nu-funk, house, and UK garage.
+							brankam is a producer, singer, pianist, DJ, and rapper of Mediterranean heritage from
+							North Carolina who primarily makes nu-funk, house, and UK garage. His tracks are full of luscious chords and melodies grounded in years of music theory training, as well as pensive and wordplay-heavy lyrics.
 						</p>
 						<p>
 							He speaks three languages, and hopes that
-							International Groove will be a place for him to
+							Across the Pond will be a place for him to
 							share the intersection of his two passions.
 						</p>
 						<p>

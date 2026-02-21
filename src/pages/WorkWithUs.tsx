@@ -40,9 +40,8 @@ export default function WorkWithUs() {
 					</div>
 					{/* survey info */}
 					<div className="text-6xl sm:text-7xl flex flex-row gap-4 w-full justify-center md:gap-8">
-						<a className=" cursor-pointer"><FontAwesomeIcon icon={faInstagram} className=" color-brankamyellow transition-300 hover:text-white" /></a>
-						<a href="mailto:brankammusic@gmail.com" className="cursor-pointer"><FontAwesomeIcon icon={faMailBulk} className="transition-300 hover:text-white  color-brankamyellow" /></a>
-						<a className="cursor-pointer"><FontAwesomeIcon icon={faYoutube} className="color-brankamyellow transition-300 hover:text-white" /></a>
+						<a href="https://www.instagram.com/productionsacrossthepond" target="_blank"  className=" cursor-pointer"><FontAwesomeIcon icon={faInstagram} className=" color-brankamyellow transition-300 hover:text-white" /></a>
+						<a href="mailto:productionsacrossthepond@gmail.com" className="cursor-pointer"><FontAwesomeIcon icon={faMailBulk} className="transition-300 hover:text-white  color-brankamyellow" /></a>
 					</div>
 				</div>
 			</div>
