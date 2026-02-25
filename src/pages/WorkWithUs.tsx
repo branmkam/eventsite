@@ -23,7 +23,7 @@ export default function WorkWithUs() {
 					<div className="relative shrink-0 w-full max-w-full md:max-w-[500px]">
 						<img
 							src="/parchment.png"
-							alt=""
+							alt="parchment"
 							className="relative z-0 w-full h-auto max-h-[600px] object-contain shrink-0"
 						/>
 						<video
