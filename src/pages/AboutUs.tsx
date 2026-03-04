@@ -55,7 +55,7 @@ export default function AboutUs() {
 					</AboutCard>
 					<AboutCard imgSrc={'/captainfrank.jpg'} name={'Captain Frank'}>
 						Captain Frank (Franco) is our event manager. He knows all of the ins and
-						outs of the industry, helping International Groove find
+						outs of the industry, helping Across the Pond find
 						awesome venues to play in.
 					</AboutCard>
 				</div>
