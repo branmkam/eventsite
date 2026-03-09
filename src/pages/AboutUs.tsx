@@ -54,9 +54,9 @@ export default function AboutUs() {
 						</p>
 					</AboutCard>
 					<AboutCard imgSrc={'/captainfrank.jpg'} name={'Captain Frank'}>
-						Captain Frank (Franco) is our event manager. He knows all of the ins and
-						outs of the industry, helping Across the Pond find
-						awesome venues to play in.
+					<p>Captain Frank is an Event Manager and DJ who grew up in Virginia Beach with a passion for finding & curating elevated musical experiences.</p> 
+					<p>His sets bring a diverse blend of minimal tech house, UK Garage, and bass that really demonstrate with ATP is all about.</p> 
+					<p>Whether he is behind the decks or handling show operations, his number one priority is to always have the dance floor grooving.</p>
 					</AboutCard>
 				</div>
 			</div>
