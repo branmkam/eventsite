@@ -3,6 +3,15 @@ import presetWind4 from '@unocss/preset-wind4';
 
 export default defineConfig({
 	presets: [presetWind4()],
+	rules: [
+		[
+			/^font-modakLight$/,
+			() => ({
+				'font-family': '"Modak", cursive',
+				'font-weight': '300',
+			}),
+		],
+	],
 	theme: {
 		colors: {
 			cerulean: '#007ba7',
