@@ -8,7 +8,7 @@ export default function AboutUs() {
 		>
 			<div className="absolute inset-0 bg-black/50" />
 			<div className="relative z-10 flex flex-col gap-4 items-center md:gap-8 p-4">
-				<h1 className="text-2xl md:text-5xl lg:text-6xl text-center font-averia text-cerulean px-1/8">
+				<h1 className="text-2xl md:text-5xl lg:text-6xl text-center font-modak text-cerulean px-1/8">
 					ABOUT US
 				</h1>
 				<p className="md:text-2xl lg:text-4xl text-lg px-18 md:px-36 text-center  max-w-[1500px]">

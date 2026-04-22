@@ -11,7 +11,7 @@ export default defineConfig({
 			maingray: '#999999',
 		},
 		font: {
-			averia: '"Averia Libre", cursive',
+			modak: '"Modak", cursive',
 			homenaje: '"Homenaje", serif',
 		},
 	},
