@@ -15,6 +15,7 @@ export default defineConfig({
 	theme: {
 		colors: {
 			cerulean: '#007ba7',
+			ceruleanLight: '#1fc3ff',
 			brankamyellow: '#fec201',
 			cherryred: '#ff2b2b',
 			maingray: '#999999',

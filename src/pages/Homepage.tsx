@@ -1,9 +1,16 @@
 import CrispButton from '../components/CrispButton';
 import { Link } from 'react-router-dom';
 import { useEffect, useRef } from 'react';
+import allshows, { type ShowProps } from "../../data/allshows.js";
 
 export default function Homepage() {
 	const videoRef = useRef<HTMLVideoElement>(null);
+
+	
+	const shows = allshows
+		.filter((p: ShowProps) => new Date(p.date) >= new Date())
+		.sort((a: ShowProps, b: ShowProps) => new Date(a.date).getTime() - new Date(b.date).getTime()); //most recent first
+
 	useEffect(() => {
 		const video = videoRef.current;
 		if (!video) return;
@@ -21,10 +28,13 @@ export default function Homepage() {
 					ACROSS THE POND
 				</h1>
 				<div className="flex flex-col sm:flex-row justify-between gap-6 text-center sm:text-left md:gap-12 md:text-3xl lg:text-5xl text-xl px-1/8 text-brankamyellow z-20 text-2xl items-center">
+					<div className="flex flex-col gap-4 sm:gap-8">
 					<h1>
 						Bringing a passion for international electronic music to
 						the Triangle.
 					</h1>
+					{shows.length > 0 && <h2>Next Event:<br/><a className="text-white underline hover:text-cerulean" href={shows[0].link} target="_blank" rel="noreferrer">{new Date(shows[0].date).toLocaleDateString()} @ {shows[0].venue}</a></h2>}
+					</div>
 					<video
 						ref={videoRef}
 						autoPlay
