@@ -7,9 +7,9 @@ const allshows = [
     image: "../../flyers/20260814.jpg",
   },
     {
-    venue: "Mira",
+    venue: "Mira Sky Lounge",
     city: "Raleigh, NC, USA",
-    link: "#",
+    link: "https://miraraleigh.com/",
     date: "2026-05-08T20:00:00",
     image:"../../flyers/20260508.jpg",
   },
