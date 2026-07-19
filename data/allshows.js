@@ -4,7 +4,7 @@ const allshows = [
     city: "Raleigh, NC, USA",
     link: "https://www.bittersocialraleigh.com/",
     date: "2026-08-14T20:00:00",
-    image: "../../flyers/20260814.jpg",
+    image: "../../flyers/20260814.png",
   },
     {
     venue: "Mira Sky Lounge",
