@@ -10,7 +10,7 @@ const lang = "en";
 export default function ShowCard({ show: s }: ShowCardProps) {
 	return (
 		<div
-			className="flex flex-col gap-4 items-stretch justify-between text-left p-4 rounded-lg transition duration-100 ease-in-out bg-opacity-50 hover:bg-opacity-50 bg-slate-900 hover:bg-slate-600"
+			className="flex h-full min-h-0 min-w-0 flex-col gap-4 items-stretch justify-between overflow-hidden text-left p-4 rounded-lg transition duration-100 ease-in-out bg-opacity-50 hover:bg-opacity-50 bg-slate-900 hover:bg-slate-600"
 		>
 			{s.image && (
 				<a title='More information about this event' href={s.link} target="_blank" rel="noreferrer"><img

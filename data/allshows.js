@@ -1,4 +1,11 @@
 const allshows = [
+     {
+    venue: "Bitter Social",
+    city: "Raleigh, NC, USA",
+    link: "https://www.visitraleigh.com/event/take-flight-with-across-the-pond-productions/110770/",
+    date: "2026-09-26T20:00:00",
+    image: "../../flyers/20260926.jpg",
+  }, 
    {
     venue: "Bitter Social",
     city: "Raleigh, NC, USA",
