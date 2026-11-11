@@ -11,3 +11,10 @@ body {
 a {
 	text-decoration: none;
 }
+
+h1 {
+	text-shadow:
+		0 0 6px rgba(0, 0, 0, 0.8),
+		0 0 12px rgba(0, 0, 0, 0.4),
+		0 0 24px rgba(0, 0, 0, 0.2);
+}

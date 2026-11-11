@@ -1,4 +1,11 @@
 const allshows = [
+  {
+    venue: "Bitter Social",
+    city: "Raleigh, NC, USA",
+    link: "https://www.visitraleigh.com/event/take-flight-with-across-the-pond-productions/110770/",
+    date: "2026-11-07T20:00:00",
+    image: "../../flyers/20261107.jpg",
+  }, 
      {
     venue: "Bitter Social",
     city: "Raleigh, NC, USA",
@@ -11,7 +18,7 @@ const allshows = [
     city: "Raleigh, NC, USA",
     link: "https://www.visitraleigh.com/event/take-flight-with-across-the-pond-productions/108960/",
     date: "2026-08-14T20:00:00",
-    image: "../../flyers/20260814.png",
+    image: "../../flyers/20260814.jpg",
   }, 
     {
     venue: "Mira Sky Lounge",

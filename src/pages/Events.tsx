@@ -22,15 +22,15 @@ export default function Events() {
 				</h1>
 
 
-				<div className="grid max-w-[1400px] justify-between grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
 					{shows.length > 0 ? (
-						shows.map((s: ShowProps, i: number) => (
+						<div className="grid w-full max-w-[1400px] justify-between grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
+							{shows.map((s: ShowProps, i: number) => (
 							<ShowCard key={"show" + i} show={s} />
-						))
+							))}
+						</div>
 					) : (
-						<p className="w-full text-lg">We don't have any upcoming shows scheduled just yet... but stay tuned! Big stuff coming in 2026.</p>
+						<p className="w-full max-w-[1400px] text-lg">We don't have any upcoming shows scheduled just yet... but stay tuned! Big stuff coming in 2027.</p>
 					)}
-				</div>
 				<h1 className="my-2 text-2xl md:text-5xl font-bold text-cerulean">
 					Past Events
 				</h1>

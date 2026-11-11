@@ -12,8 +12,8 @@ export default function AboutUs() {
 					ABOUT US
 				</h1>
 				<p className="md:text-2xl lg:text-4xl text-lg px-18 md:px-36 text-center  max-w-[1500px]">
-					As a trio of internationally minded people who enjoy music
-					from all over the earth, across every pond, we wanted to bring a slice of what
+					As internationally minded people who enjoy music
+					from all over the earth, <b>across every pond</b>, we wanted to bring a slice of what
 					we love to a place we love.
 				</p>
 				<div className="justify-center flex flex-col gap-4 md:gap-8 justify-between">
@@ -53,11 +53,20 @@ export default function AboutUs() {
 							to learn more!
 						</p>
 					</AboutCard>
-					<AboutCard imgSrc={'/captainfrank.jpg'} name={'Captain Frank'}>
-					<p>Captain Frank is an Event Manager and DJ who grew up in Virginia Beach with a passion for finding & curating elevated musical experiences.</p> 
-					<p>His sets bring a diverse blend of minimal tech house, UK Garage, and bass that really demonstrate with ATP is all about.</p> 
-					<p>Whether he is behind the decks or handling show operations, his number one priority is to always have the dance floor grooving.</p>
-					</AboutCard>
+					<div className="relative w-full max-w-[1400px]">
+						<div className="grayscale">
+							<AboutCard imgSrc={'/captainfrank.jpg'} name={'Captain Frank'}>
+								<p>Captain Frank is an Event Manager and DJ who grew up in Virginia Beach with a passion for finding & curating elevated musical experiences.</p>
+								<p>His sets bring a diverse blend of minimal tech house, UK Garage, and bass that really demonstrate with ATP is all about.</p>
+								<p>Whether he is behind the decks or handling show operations, his number one priority is to always have the dance floor grooving.</p>
+							</AboutCard>
+						</div>
+						<div className="pointer-events-none absolute inset-0 z-20 flex items-center justify-center rounded-lg bg-black/25 p-4">
+							<p className="text-center font-modak text-4xl bg-black p-4 rounded-xl text-red-600 sm:text-5xl md:text-7xl">
+								promoting events for his day job!
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
