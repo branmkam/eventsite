@@ -20,9 +20,18 @@ export default function Homepage() {
 	}, []);
 	return (
 		<div
-			className="relative w-full min-h-[calc(100vh-96px)] p-4 bg-cover bg-center bg-fixed font-homenaje"
-			style={{ backgroundImage: 'url(/djbg.jpg)' }}
+			className="relative w-full min-h-[calc(100vh-96px)] p-4 font-homenaje"
 		>
+			<video
+				autoPlay
+				loop
+				muted
+				playsInline
+				aria-hidden="true"
+				className="absolute inset-0 h-full w-full object-cover"
+			>
+				<source src="/discoball.mov" type="video/mp4" />
+			</video>
 			<div className="absolute inset-0 bg-black/50" />
 			<div className="relative z-10 mx-auto flex max-w-300 flex-col items-center justify-center gap-4 p-4 md:gap-12">
 				<div className="grid w-full grid-cols-1 items-center gap-8 text-center md:grid-cols-[2fr_3fr] md:text-left">
