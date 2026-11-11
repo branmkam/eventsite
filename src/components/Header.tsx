@@ -10,7 +10,7 @@ export default function Header({
 	return (
 		<div className="z-50 fixed top-0 left-0 w-full px-4 bg-black text-cerulean font-homenaje w-full h-16 flex justify-between items-center">
 			<Link to="/" onClick={() => setCurrent && setCurrent('/')}>
-				<h2 className="sm:text-xl text-left font-modak text-cerulean">
+				<h2 className="hover:text-slate-200 transition ease-in-out duration-200 md:tracking-[3px] text-base sm:text-xl md:text-2xl text-left font-modak text-brankamyellow">
 					ACROSS THE POND
 				</h2>
 			</Link>

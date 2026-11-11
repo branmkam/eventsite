@@ -29,7 +29,7 @@ export default function Events() {
 							))}
 						</div>
 					) : (
-						<p className="w-full max-w-[1400px] text-lg">We don't have any upcoming shows scheduled just yet... but stay tuned! Big stuff coming in 2027.</p>
+						<p className="w-full max-w-[1400px] text-lg md:text-2xl">We don't have any upcoming shows scheduled just yet... but stay tuned! Big stuff coming in 2027.</p>
 					)}
 				<h1 className="my-2 text-2xl md:text-5xl font-bold text-cerulean">
 					Past Events
